@@ -1,0 +1,85 @@
+root@ubuntu:/mnt/hgfs/ubuntu_share/gb28181-2016-master/build# ./zilu_gb28181 -c ../config/config.yaml 
+enter main loop1:
+Start ThreadPool num: 4
+sipfrom sip:37010200002000000001@192.168.184.131:5566,sipproxy sip:34020000002000000001@192.168.0.198:5060
+CGB28181SvrManager::Start() enter
+pServer 0x7ffda3f55ea0
+eXosip_init successfully!
+CSipServer::Start  PushTask recvTask,procTask1
+RegisterOnline ok
+CGB28181SvrManager::Start()
+enter main loop:
+heartbead thread entry.
+RegisterOnline ok
+Push event: EXOSIP_REGISTRATION_FAILURE, id=1000000000 to queue successfully
+register id: 1 need authentication!
+Push event: EXOSIP_REGISTRATION_FAILURE, id=1000000001 to queue successfully
+register id: 2 need authentication!
+Push event: EXOSIP_REGISTRATION_SUCCESS, id=1000000002 to queue successfully
+rid: 2 register success!
+Push event: EXOSIP_REGISTRATION_SUCCESS, id=1000000003 to queue successfully
+rid: 1 register success!
+Push event: EXOSIP_REGISTRATION_SUCCESS, id=1000000004 to queue successfully
+rid: 2 register success!
+Push event: EXOSIP_REGISTRATION_SUCCESS, id=1000000005 to queue successfully
+rid: 1 register success!
+Push event: EXOSIP_MESSAGE_NEW, id=1000000006 to queue successfully
+incoming request body: <?xml version="1.0" encoding="GB2312"?>
+<Query>
+  <CmdType>Catalog</CmdType>
+  <SN>763586791</SN>
+  <DeviceID>37010200002000000001</DeviceID>
+</Query>
+
+[CXmlParser] ParseXmlHeader, category: Query, cmdtype: Catalog, devid: 37010200002000000001, sn: 763586791
+Revice message, category: 1, cmd_type: 3 from 34020000002000000001, host: 3402000000
+Push event: EXOSIP_MESSAGE_NEW, id=1000000007 to queue successfully
+incoming request body: <?xml version="1.0" encoding="GB2312"?>
+<Query>
+  <CmdType>Catalog</CmdType>
+  <SN>681586794</SN>
+  <DeviceID>37010200002000000001</DeviceID>
+</Query>
+
+[CXmlParser] ParseXmlHeader, category: Query, cmdtype: Catalog, devid: 37010200002000000001, sn: 681586794
+Revice message, category: 1, cmd_type: 3 from 34020000002000000001, host: 3402000000
+[CRequestManager] AddRequest: keepalive, reqid: 1348305001 added success.
+keepalive wait result.
+Push event: EXOSIP_MESSAGE_NEW, id=1000000008 to queue successfully
+incoming request body: <?xml version="1.0" encoding="GB2312"?>
+<Query>
+  <CmdType>Catalog</CmdType>
+  <SN>502635753</SN>
+  <DeviceID>37010200002000000001</DeviceID>
+</Query>
+
+[CXmlParser] ParseXmlHeader, category: Query, cmdtype: Catalog, devid: 37010200002000000001, sn: 502635753
+Revice message, category: 1, cmd_type: 3 from 34020000002000000001, host: 3402000000
+Push event: EXOSIP_MESSAGE_ANSWERED, id=1000000009 to queue successfully
+Keepalive: 1348305001, statcode: 200
+handel_response: keepalive, reqid: 1348305001 finished, delete from request center.
+keepalive wait over.
+[CRequestManager] AddRequest: keepalive, reqid: 1856622812 added success.
+keepalive wait result.
+Push event: EXOSIP_MESSAGE_ANSWERED, id=1000000010 to queue successfully
+Keepalive: 1856622812, statcode: 200
+keepalive wait over.
+handel_response: keepalive, reqid: 1856622812 finished, delete from request center.
+[CRequestManager] AddRequest: keepalive, reqid: 1951030838 added success.
+keepalive wait result.
+Push event: EXOSIP_MESSAGE_ANSWERED, id=1000000011 to queue successfully
+Keepalive: 1951030838, statcode: 200
+keepalive wait over.
+handel_response: keepalive, reqid: 1951030838 finished, delete from request center.
+[CRequestManager] AddRequest: keepalive, reqid: 986869631 added success.
+keepalive wait result.
+Push event: EXOSIP_MESSAGE_ANSWERED, id=1000000012 to queue successfully
+Keepalive: 986869631, statcode: 200
+handel_response: keepalive, reqid: 986869631 finished, delete from request center.
+keepalive wait over.
+[CRequestManager] AddRequest: keepalive, reqid: 1525442104 added success.
+keepalive wait result.
+Push event: EXOSIP_MESSAGE_ANSWERED, id=1000000013 to queue successfully
+Keepalive: 1525442104, statcode: 200
+handel_response: keepalive, reqid: 1525442104 finished, delete from request center.
+keepalive wait over.
